@@ -1,0 +1,877 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: GolestanFont;
+  z-index: 2;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: GolestanFont;
+  src: url(../font/IRANSansWebFaNum-Medium.eot);
+  src: url(../font/IRANSansWebFaNum-Medium.ttf);
+  src: url(../font/IRANSansWebFaNum-Medium.woff);
+  src: url(../font/IRANSansWebFaNum-Medium.woff2);
+}
+@import "animate.css";
+@keyframes animate {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 265px;
+  }
+}
+@keyframes animate1 {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 110px;
+  }
+}
+@keyframes animate2 {
+  from {
+    right: -1000px;
+  }
+  to {
+    right: 212px;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+h6 {
+  position: absolute;
+}
+// header
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(36, 36, 36);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  img {
+    position: absolute;
+    top: 45px;
+    left: 80%;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-right: 120px;
+    ul {
+      width: inherit;
+      height: inherit;
+      list-style: none;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      //   gap: 10px;
+      li {
+        width: fit-content;
+        height: 40%;
+        position: relative;
+        line-height: 40px;
+        div.jo {
+          width: 15vw;
+          position: absolute;
+          background-color: rgb(36, 36, 36);
+          display: none;
+          transition: 500ms;
+          line-height: unset;
+          top: 40px;
+          ul {
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            li {
+              width: 100%;
+              text-align: start;
+              padding-right: 20px;
+              a {
+                text-decoration: none;
+                text-transform: capitalize;
+                color: rgb(109, 109, 109);
+                font-size: small;
+                // padding: 5px 0px 5px 25px;
+                transition: 500ms;
+                &:hover {
+                  color: rgb(172, 172, 172);
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          div.jo {
+            display: block;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: rgb(109, 109, 109);
+        font-size: 100;
+        padding: 5px 25px 5px 25px;
+        transition: 500ms;
+        &:hover {
+          color: rgb(172, 172, 172);
+        }
+      }
+    }
+  }
+}
+.coco {
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid rgb(77, 77, 77);
+  //   padding-right: 20px;
+}
+// end header
+// animation
+div.anime {
+  width: 100%;
+  height: 455px;
+  background-color: lightgrey;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  div.subanime {
+    width: 35%;
+    height: 95%;
+  }
+  .rast {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    // gap: 7px;
+    h2 {
+      font-size: 200;
+      text-align: start;
+      padding-right: 10px;
+      padding-top: 40px;
+      font-size: 20px;
+    }
+    .text {
+      color: red;
+    }
+    .text2 {
+      color: rgb(77, 77, 77);
+      font-size: 19px;
+    }
+    .text3 {
+      width: 40%;
+      height: 110px;
+      top: 45%;
+      color: rgb(155, 155, 155);
+      font-size: 18px;
+      animation-name: animate;
+      animation-duration: 1500ms;
+      position: absolute;
+    }
+    a {
+      width: fit-content;
+      height: fit-content;
+      text-decoration: none;
+      padding: 7px 20px;
+      position: absolute;
+      top: 75%;
+      right: 145px;
+      color: gray;
+      box-sizing: border-box;
+      border: 1px solid gray;
+      border-radius: 5px;
+      transition: 500ms;
+      background-color: ivory;
+      &:hover {
+        background-color: red;
+        color: ivory;
+      }
+    }
+  }
+  .chap {
+    img {
+      animation-name: animate1;
+      animation-duration: 2500ms;
+      font-weight: bold;
+      position: absolute;
+    }
+  }
+}
+// end animation
+// intro
+div.intro {
+  width: 100%;
+  height: 1180px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin: 15px 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+  padding-top: 150px;
+  text-align: justify;
+  position: relative;
+  gap: 5px;
+  div.moarefi {
+    width: 70%;
+    height: 480px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    h2.yek {
+      width: 70%;
+      color: red;
+      position: absolute;
+      animation-name: animate2;
+      animation-duration: 2500ms;
+      position: absolute;
+    }
+    h2.do {
+      width: 70%;
+      top: 20%;
+      color: rgb(131, 131, 131);
+      font-weight: 200;
+      font-size: 20px;
+      position: absolute;
+      animation-name: animate2;
+      animation-duration: 2500ms;
+      position: absolute;
+    }
+    h2.se {
+      width: 70%;
+      top: 30%;
+      color: rgb(131, 131, 131);
+      font-weight: 200;
+      font-size: 20px;
+      position: absolute;
+      animation-name: animate2;
+      animation-duration: 2500ms;
+      position: absolute;
+    }
+  }
+  div.mahsool {
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: 50px;
+    padding-right: 20px;
+    h2.m1 {
+      color: red;
+      position: absolute;
+      animation-name: animate2;
+      animation-duration: 2500ms;
+      position: absolute;
+    }
+    h2.m2 {
+      width: 70%;
+      top: 55%;
+      color: rgb(131, 131, 131);
+      font-weight: 200;
+      font-size: 20px;
+      position: absolute;
+      animation-name: animate2;
+      animation-duration: 2500ms;
+      position: absolute;
+    }
+  }
+  div.ax {
+    width: 70%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    animation-name: zoomIn;
+    //   position: absolute;
+    animation-duration: 2500ms;
+    div.subax {
+      h2.textax {
+        font-size: 16px;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        color: rgb(112, 112, 112);
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+// end intro
+// tabligh
+div.tabligh {
+  width: 100%;
+  height: 510px;
+  background-color: burlywood;
+  position: relative;
+  padding-bottom: 10px;
+  img {
+    width: 100%;
+    height: 500px;
+  }
+  div.tab1 {
+    width: 250px;
+    height: 65px;
+    padding: 10px;
+    position: absolute;
+    top: 83.5%;
+    right: 30%;
+    background-color: rgb(255, 31, 31);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: start;
+    h2 {
+      color: ivory;
+      font-weight: 100;
+    }
+    h2.tab1 {
+      font-size: 20px;
+    }
+    h2.tab2 {
+      font-size: 14px;
+    }
+  }
+}
+// end tabligh
+// food
+div.food {
+  width: 100%;
+  height: 390px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  gap: 35px;
+  border-top: 1px solid lightgray;
+  div.subfood {
+    width: 60%;
+    font-weight: 100;
+    h2.foodtext1 {
+      color: red;
+      font-size: 20px;
+      //   border-top: 1px solid lightgray;
+      padding-top: 50px;
+    }
+    h2.foodtext2 {
+      color: rgb(107, 107, 107);
+      font-size: 18px;
+      font-weight: lighter;
+    }
+  }
+  div.btnfood {
+    display: flex;
+    flex-flow: row nowrap !important;
+    justify-content: start;
+    align-items: start;
+    gap: 7px;
+    padding: 20px 0px 0px 0px;
+    padding-bottom: 50px;
+
+    div.foodtext3 {
+      a {
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 7px 20px;
+        top: 75%;
+        right: 145px;
+        color: gray;
+        box-sizing: border-box;
+        border: 1px solid gray;
+        transition: 500ms;
+        &:hover {
+          background-color: red;
+          color: ivory;
+        }
+      }
+    }
+  }
+}
+// end food
+// tabligh 2
+div.tabligh {
+  width: 100%;
+  height: 510px;
+  background-color: burlywood;
+  position: relative;
+  img {
+    width: 100%;
+    height: 500px;
+  }
+  div.tab1 {
+    width: 250px;
+    height: 65px;
+    padding: 10px;
+    position: absolute;
+    top: 83.5%;
+    right: 30%;
+    background-color: rgb(255, 31, 31);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: start;
+    h2 {
+      color: ivory;
+      font-weight: 100;
+    }
+    h2.tab1 {
+      font-size: 20px;
+    }
+    h2.tab2 {
+      font-size: 14px;
+    }
+  }
+}
+// end tabligh 2
+// tabligh 3
+div.tabligh {
+  width: 100%;
+  height: 510px;
+  background-color: burlywood;
+  position: relative;
+  img {
+    width: 100%;
+    height: 500px;
+  }
+  div.tab1 {
+    width: 250px;
+    height: 65px;
+    padding: 10px;
+    position: absolute;
+    top: 83.5%;
+    right: 30%;
+    background-color: rgb(255, 31, 31);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: start;
+    h2 {
+      color: ivory;
+      font-weight: 100;
+    }
+    h2.tab1 {
+      font-size: 20px;
+    }
+    h2.tab2 {
+      font-size: 14px;
+    }
+  }
+}
+// end tabligh 3
+// gray
+div.gray {
+  width: 100%;
+  height: 245px;
+  background-color: rgb(150, 150, 150);
+}
+// end gray
+// lajale
+div.majale {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  h2.subm {
+    padding-right: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    color: red;
+  }
+}
+// end lajale
+// majale2
+div.majale2 {
+  width: 100%;
+  height: 780px;
+  background-color: #cde4b0;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  div.submajale2 {
+    height: 600px;
+    background-color: white;
+    box-shadow: 2px 2px 10px gray;
+    display: grid;
+    grid-template-rows: repeat(2, 300px);
+    div.top {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    div.bottom {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      justify-content: start;
+      align-items: start;
+      padding: 22px;
+      box-sizing: border-box;
+      text-align: justify;
+      div.head {
+        color: red;
+        font-size: 20px;
+      }
+      div.text {
+        color: #7a7a7a;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+      div.btn {
+        width: fit-content;
+        color: #7a7a7a;
+        font-size: 14px;
+        border: 2px solid #ececec;
+        padding: 8px 25px;
+        margin-top: 30px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 500ms;
+        cursor: pointer;
+        &:hover {
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+  }
+}
+// end majale2
+// video
+div.video {
+  width: 100%;
+  height: 570px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  div.subVideo {
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px gray;
+    display: grid;
+    grid-template-rows: repeat(2, 180);
+    div.top {
+      width: 100%;
+      height: 180px;
+      position: relative;
+      video {
+        width: inherit;
+        height: inherit;
+      }
+      img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: absolute;
+        top: 4%;
+        right: 5%;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    div.bottom {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      justify-content: start;
+      align-items: start;
+      padding: 22px;
+      box-sizing: border-box;
+      text-align: justify;
+      div.head {
+        color: red;
+        font-size: 20px;
+      }
+      div.text {
+        color: #7a7a7a;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+      div.btn {
+        width: fit-content;
+        color: #7a7a7a;
+        font-size: 14px;
+        border: 2px solid #ececec;
+        padding: 8px 25px;
+        margin-top: 30px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 500ms;
+        cursor: pointer;
+        &:hover {
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+  }
+}
+// end video
+// tower
+div.tower {
+  width: 100%;
+  height: 620px;
+  background-color: burlywood;
+  position: relative;
+  div.rang {
+    width: inherit;
+    height: 600px;
+    background-color: #105153;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    // gap: 10px;
+    div.top {
+      width: inherit;
+      text-align: center;
+      padding-bottom: 15px;
+      box-sizing: border-box;
+      color: #b0c8cc;
+      font-size: 22px;
+      border-bottom: 1px solid #009da2;
+    }
+    div.bottom {
+      display: flex;
+      flex-flow: column nowrap;
+      width: inherit;
+      text-align: center;
+      padding-top: 15px;
+      box-sizing: border-box;
+      color: #009da2;
+      font-size: 22px;
+      font-weight: 100;
+      span.one {
+        font-size: 20px;
+        color: #00d8df;
+        span.subone {
+          font-size: 26px;
+          color: #009da2;
+        }
+      }
+      span.two {
+        font-size: 18px;
+        font-weight: 100;
+        color: #c2c2c2;
+      }
+    }
+  }
+  div.photo {
+    width: 400px;
+    position: absolute;
+    top: 60%;
+    left: calc(50% - 400px / 2);
+    img {
+      width: inherit;
+    }
+  }
+}
+// end tower
+// iran
+div.company-iran {
+  width: 100%;
+  height: 520px;
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  text-align: justify;
+  border-top: 2px solid #ececec;
+  div.head {
+    width: 50%;
+    color: red;
+    font-size: 24px;
+  }
+  div.text {
+    width: 50%;
+    color: #7a7a7a;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  div.buttom {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    margin-left: 42%;
+    div.do {
+      color: #7a7a7a;
+      font-size: 15px;
+      border: 2px solid #ececec;
+      padding: 8px 25px;
+      margin-top: 30px;
+      background-color: white;
+      border-radius: 10px;
+      transition: 500ms;
+      cursor: pointer;
+      &:hover {
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+}
+// end iran
+// footer
+div.footer {
+  width: 100%;
+  height: 610px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  div.social {
+    width: inherit;
+    height: 95px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    position: relative;
+    border-bottom: 25px solid red;
+    img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+    a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+  }
+  div.end {
+    width: inherit;
+    height: 520px;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    div.subend {
+      width: 60%;
+      height: 330px;
+      padding-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      align-content: start;
+      div.subsubend {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        img {
+          width: inherit;
+          height: inherit;
+          align-self: center;
+        }
+        h2.matnesh {
+          width: 80%;
+          font-size: 14px;
+          font-weight: 100;
+          text-align: center;
+          border-bottom: 1px solid rgb(150, 150, 150);
+          border-top: 1px solid rgb(150, 150, 150);
+          padding: 10px 0px;
+          color: ivory;
+        }
+        a {
+          text-decoration: none;
+          color: rgb(155, 155, 155);
+          transition: 500ms;
+          font-size: 12px;
+          font-weight: 100;
+          align-self: self-start;
+          padding-right: 22px;
+          &:hover {
+            color: ivory;
+          }
+        }
+      }
+    }
+  }
+  div.end2 {
+    width: 60%;
+    height: 50px;
+    .subend2 {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+      h2.subsubend1 {
+        font-size: 14px;
+        color: rgb(155, 155, 155);
+        font-weight: 100;
+      }
+      h2.subsubend2 {
+        font-size: 12px;
+        color: rgb(133, 133, 133);
+        font-weight: 100;
+      }
+    }
+  }
+}
+// end footer
+// see up
+div.see-up {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 3.4%;
+  right: 95.4%;
+  border-radius: 5px;
+  background-color: #2b2b2baa;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    color: ivory;
+  }
+}
+// end see up
